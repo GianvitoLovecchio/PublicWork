@@ -1,0 +1,362 @@
+:root {
+    --color-p: #f5f5f5;
+    /* sfondo */
+    --color-s: #002855;
+    /* testo ed elementi principali */
+    --color-a: #B2D4E6;
+    /* pulsanti ed elementi secondari */
+    --color-aTr: #b2d4e63f;
+    /* pulsanti ed elementi secondari */
+    --color-x: #dbae6a;
+    /* dettagli */
+}
+
+body {
+   
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+.titleFont {
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+}
+
+* {
+    font-family: "Lora", serif;
+    color: var(--color-s);
+    font-weight: 300;
+}
+
+.textFont {
+    font-family: "Lora", serif;
+    color: var(--color-s) !important;
+    font-weight: 300;
+}
+
+.color-p {
+    color: var(--color-p) !important;
+}
+
+.color-s {
+    color: var(--color-s) !important;
+}
+
+.color-a {
+    color: var(--color-a) !important;
+}
+
+.color-x {
+    color: var(--color-x) !important;
+}
+
+.bg-p {
+    background-color: var(--color-p);
+}
+
+.bg-s {
+    background-color: var(--color-s);
+}
+
+.bg-a {
+    background-color: var(--color-a);
+}
+
+.bg-x {
+    background-color: var(--color-x);
+}
+
+/* INIZIO NAVBAR */
+
+.navSetting {
+    min-height: 8vh;
+    transition: all 1s ease-in-out;
+}
+
+.buttonNavCustom {
+    padding: 10px;
+    padding-left: 45px;
+    font-size: 3vh;
+    border: 0;
+    color: var(--color-s);
+    background-color: transparent;
+}
+
+.scrollNavbar {
+    /* backdrop-filter: blur(3.5px);
+    border-radius: 2vh;
+    border: 1px solid var(--color-s); */
+    position: fixed;
+    /* left: 10%;
+    top: 2%; */
+    /* width: 90vw; */
+    /* transform: translateX(-50%); */
+    /* background-color: var(--color-aTr); */
+}
+
+.buttonSetting {
+    padding-bottom: 1px;
+}
+
+/* FINE NAVBAR */
+
+/* INIZIO HEADER */
+
+.imgHeader {
+    width: 100%;
+    object-fit: fill;
+    margin-right: 0;
+    box-shadow: 0.2vw 0.4vh 2vh var(--color-x);
+}
+
+.headerSetting {
+    height: 90vh;
+    padding: 0;
+}
+
+/* FINE HEADER */
+
+/* INIZIO SEZIONE CATEGORIE */
+
+.titleCard {
+    font-size: 19px;
+    font-weight: 550;
+}
+
+.borderCategories {
+    border-bottom: solid var(--color-s) 0.2vh;
+    width: 70vw;
+    padding-right: 1.5rem;
+}
+
+.customCard {
+    margin-top: 10vh;
+    box-shadow: 0.1vw 0.3vh 1.5vh var(--color-x);
+    height: calc(52vh + 70px);
+    font-size: calc(0.8vh + 7px);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 10px;
+    color: var(--bs-card-color);
+}
+
+.noradius {
+    border-radius: 0;
+}
+
+.imgCardCustom {
+    height: 35vh;
+}
+
+/* FINE SEZIONE CATEGORIE */
+
+/* INIZIO NUMERI */
+
+.borderNumbers {
+    border-bottom: solid var(--color-s) 0.2vh;
+    padding-right: 1.5rem;
+}
+
+
+.dimFont {
+    font-size: 25px;
+}
+
+/* FINE NUMERI */
+
+/* INIZIO ULTIME PROPOSTE */
+
+.btnCustom{
+    border: 1px solid var(--color-s);
+    border-radius: 3px;
+    color: var(--color-s);
+    background-color: var(--color-p);
+    width: 30%;
+    height: 6.5%;
+    font-size: calc(0.7vh + 10px);
+    padding: 3px;
+    margin-bottom: 10px;
+    align-self: center ;
+    font-family: "Lora", serif;
+    font-weight: 300;
+    transition: color 1s, background-color 1s, border-color 1s;
+}
+
+.btnCustom:hover {
+    color: var(--color-s);
+    background-color: var(--color-a);
+    border-color: var(--color-a);   
+}
+
+/* .lastCard{
+    height: 75vh;
+} */
+
+
+
+
+/* FINE ULTIME PROPOSTE */
+
+/* INIZIO RICERCA */
+
+.fontPrice{
+    font-size: large;
+}
+
+/* FINE RICERCA */
+
+/* INIZIO FOOTER */
+
+.footerbkg{
+    background-color: var(--color-a);
+    padding-top: 7vh;
+    padding-bottom: 1vh;
+}
+
+.ytIcon{
+    width: 10vw;
+    height: 10vh;
+}
+
+.borderFootSocial{
+    border-bottom: solid var(--color-s) 0.2vh;
+    width: 75%;
+}
+.footerTitle{
+    font-size: calc(1.5vw + 20px);
+}
+
+.footerTitleLast{
+    font-size: calc(1vw + 20px); 
+}
+
+.copyText{
+    font-size: calc(0.5vw + 10px); 
+}
+
+/* FINE FOOTER */
+
+                                                                        /* RISULTATI_RICERCA.HTML */
+
+/* SEZIONE RISULTATI RICERCA */
+
+.marginSection{
+    margin-top: calc(7vh + 30px)
+
+}.marginCustomNotResult{
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+/* INIZIO MODALE */
+
+
+.customModalSearch{
+    width: 60vw;
+    position: absolute;
+    left: -10vw;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+}
+
+.boxPrice{
+    width: 35%;
+}
+
+.borderModal{
+    border-bottom: solid var(--color-s) 0.5px;
+
+}
+
+.customHeight{
+    height: 13vh
+}
+
+
+/* FINE MODALE */
+
+
+                                                                        /* MEDIA QUERIES */
+
+@media screen and (max-width: 991px) {
+    .scrollNavbar {
+        backdrop-filter: blur(5px);
+        top: 0;
+        background-color: #b2d4e650;
+        position: fixed;
+        top: 1%;
+        left: 2%;
+    }
+
+    .customModalSearch{
+        width: 65vw;
+        position: absolute;
+        left: 15vw;
+        color: var(--bs-modal-color);
+        pointer-events: auto;
+        background-color: var(--bs-modal-bg);
+        background-clip: padding-box;
+    }
+
+    .customHeight{
+        height: 8vh
+    }
+
+    .lastCard{
+        height: 50vh;
+    }
+
+    .imgModal{
+        max-width: 50%; 
+        height: auto;
+    }
+
+    .divImmagineImmobile{
+            /* max-width: 70%; 
+            height: auto;    
+            display: block;  
+            margin: 0 auto;   */
+            background-color: red;
+            height: 100px;
+        }
+
+
+    
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        color: var(--bs-modal-color);
+        pointer-events: auto;
+        background-color: var(--bs-modal-bg);
+        background-clip: padding-box;
+        border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+        border-radius: 0vw;
+        outline: 0;
+        overflow: hidden;
+    
+
+}
+
+@media screen and (min-width:992px) {
+    .buttonNavCustom {
+        display: none
+    }
+
+    
+   .customWidthInput{
+    width: 75%;
+}
+
+   
+}
+
+}
